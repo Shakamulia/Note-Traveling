@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('catatan_perjalanans', function (Blueprint $table) {
-            $table->string('nik', 20);
+        Schema::create('catatan_perjalanan', function (Blueprint $table) {
+            $table->id();
             $table->date('tanggal');
-            $table->time('jam');
-            $table->string('lokasi_dituju', 50);
+            $table->time('waktu');
             $table->double('suhu');
+            $table->text('lokasi');
             $table->timestamps();
         });
     }

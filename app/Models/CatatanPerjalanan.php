@@ -10,11 +10,12 @@ class CatatanPerjalanan extends Model
     use HasFactory;
 
     protected $fillable = [
-        "nik",
         "tanggal",
-        "jam",
-        "lokasi_dituju",
+        "waktu",
         "suhu",
+        "lokasi",
     ];
+
+    protected $table = "catatan_perjalanan";
 
 }

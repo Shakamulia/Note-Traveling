@@ -8,7 +8,10 @@ class LoginController extends Controller
 {
     public function index()
     {
-        $title = 'Login Page';
-        return view('Login.Login', compact('title'));
+        return view('Auth.Login');
+    }
+    public function store()
+    {
+
     }
 }
